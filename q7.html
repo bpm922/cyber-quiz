@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 7</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q7'); startTimer('q8.html');">
+  <main>
+    <header>
+      <h2>Question 7</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q7. Firewall is used for:</p>
+      <label><input type="radio" name="q7" value="0" onchange="saveAnswer('q7', 0);"> Increasing speed</label>
+      <label><input type="radio" name="q7" value="1" onchange="saveAnswer('q7', 1);"> Blocking unauthorized access</label>
+      <label><input type="radio" name="q7" value="2" onchange="saveAnswer('q7', 2);"> Storage</label>
+      <label><input type="radio" name="q7" value="3" onchange="saveAnswer('q7', 3);"> Gaming</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q6.html">Previous</a>
+      <a class="nav-button" href="q8.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

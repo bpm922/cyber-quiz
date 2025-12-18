@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 21</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q21'); startTimer('q22.html');">
+  <main>
+    <header>
+      <h2>Question 21</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q21. Safe browser is:</p>
+      <label><input type="radio" name="q21" value="0" onchange="saveAnswer('q21', 0);"> Outdated browser</label>
+      <label><input type="radio" name="q21" value="1" onchange="saveAnswer('q21', 1);"> Updated browser</label>
+      <label><input type="radio" name="q21" value="2" onchange="saveAnswer('q21', 2);"> Unknown browser</label>
+      <label><input type="radio" name="q21" value="3" onchange="saveAnswer('q21', 3);"> No browser</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q20.html">Previous</a>
+      <a class="nav-button" href="q22.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

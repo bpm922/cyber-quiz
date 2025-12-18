@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 20</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q20'); startTimer('q21.html');">
+  <main>
+    <header>
+      <h2>Question 20</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q20. OTP stands for:</p>
+      <label><input type="radio" name="q20" value="0" onchange="saveAnswer('q20', 0);"> One Time Password</label>
+      <label><input type="radio" name="q20" value="1" onchange="saveAnswer('q20', 1);"> Online Transfer Protocol</label>
+      <label><input type="radio" name="q20" value="2" onchange="saveAnswer('q20', 2);"> Open Text Password</label>
+      <label><input type="radio" name="q20" value="3" onchange="saveAnswer('q20', 3);"> One Time Pin</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q19.html">Previous</a>
+      <a class="nav-button" href="q21.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

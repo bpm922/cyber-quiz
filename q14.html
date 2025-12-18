@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 14</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q14'); startTimer('q15.html');">
+  <main>
+    <header>
+      <h2>Question 14</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q14. Data backup means:</p>
+      <label><input type="radio" name="q14" value="0" onchange="saveAnswer('q14', 0);"> Deleting data</label>
+      <label><input type="radio" name="q14" value="1" onchange="saveAnswer('q14', 1);"> Copying data for safety</label>
+      <label><input type="radio" name="q14" value="2" onchange="saveAnswer('q14', 2);"> Encrypting data</label>
+      <label><input type="radio" name="q14" value="3" onchange="saveAnswer('q14', 3);"> Hiding data</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q13.html">Previous</a>
+      <a class="nav-button" href="q15.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 6</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q6'); startTimer('q7.html');">
+  <main>
+    <header>
+      <h2>Question 6</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q6. Device used to connect internet:</p>
+      <label><input type="radio" name="q6" value="0" onchange="saveAnswer('q6', 0);"> Printer</label>
+      <label><input type="radio" name="q6" value="1" onchange="saveAnswer('q6', 1);"> Router</label>
+      <label><input type="radio" name="q6" value="2" onchange="saveAnswer('q6', 2);"> Scanner</label>
+      <label><input type="radio" name="q6" value="3" onchange="saveAnswer('q6', 3);"> Camera</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q5.html">Previous</a>
+      <a class="nav-button" href="q7.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

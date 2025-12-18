@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q2'); startTimer('q3.html');">
+  <main>
+    <header>
+      <h2>Question 2</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q2. Which is a strong password?</p>
+      <label><input type="radio" name="q2" value="0" onchange="saveAnswer('q2', 0);"> 123456</label>
+      <label><input type="radio" name="q2" value="1" onchange="saveAnswer('q2', 1);"> password</label>
+      <label><input type="radio" name="q2" value="2" onchange="saveAnswer('q2', 2);"> Abc@1234</label>
+      <label><input type="radio" name="q2" value="3" onchange="saveAnswer('q2', 3);"> name123</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q1.html">Previous</a>
+      <a class="nav-button" href="q3.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

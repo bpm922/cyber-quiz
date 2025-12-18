@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 22</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q22'); startTimer('q23.html');">
+  <main>
+    <header>
+      <h2>Question 22</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q22. Social engineering is:</p>
+      <label><input type="radio" name="q22" value="0" onchange="saveAnswer('q22', 0);"> Coding technique</label>
+      <label><input type="radio" name="q22" value="1" onchange="saveAnswer('q22', 1);"> Tricking people to get information</label>
+      <label><input type="radio" name="q22" value="2" onchange="saveAnswer('q22', 2);"> Network setup</label>
+      <label><input type="radio" name="q22" value="3" onchange="saveAnswer('q22', 3);"> Virus creation</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q21.html">Previous</a>
+      <a class="nav-button" href="q23.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

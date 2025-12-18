@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 18</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q18'); startTimer('q19.html');">
+  <main>
+    <header>
+      <h2>Question 18</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q18. Encryption means:</p>
+      <label><input type="radio" name="q18" value="0" onchange="saveAnswer('q18', 0);"> Deleting data</label>
+      <label><input type="radio" name="q18" value="1" onchange="saveAnswer('q18', 1);"> Converting data into secret code</label>
+      <label><input type="radio" name="q18" value="2" onchange="saveAnswer('q18', 2);"> Compressing files</label>
+      <label><input type="radio" name="q18" value="3" onchange="saveAnswer('q18', 3);"> Sharing files</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q17.html">Previous</a>
+      <a class="nav-button" href="q19.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

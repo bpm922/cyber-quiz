@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q4'); startTimer('q5.html');">
+  <main>
+    <header>
+      <h2>Question 4</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q4. Example of malware:</p>
+      <label><input type="radio" name="q4" value="0" onchange="saveAnswer('q4', 0);"> Router</label>
+      <label><input type="radio" name="q4" value="1" onchange="saveAnswer('q4', 1);"> Virus</label>
+      <label><input type="radio" name="q4" value="2" onchange="saveAnswer('q4', 2);"> Firewall</label>
+      <label><input type="radio" name="q4" value="3" onchange="saveAnswer('q4', 3);"> Browser</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q3.html">Previous</a>
+      <a class="nav-button" href="q5.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

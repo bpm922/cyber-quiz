@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 13</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q13'); startTimer('q14.html');">
+  <main>
+    <header>
+      <h2>Question 13</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q13. Software that protects from virus:</p>
+      <label><input type="radio" name="q13" value="0" onchange="saveAnswer('q13', 0);"> Browser</label>
+      <label><input type="radio" name="q13" value="1" onchange="saveAnswer('q13', 1);"> Antivirus</label>
+      <label><input type="radio" name="q13" value="2" onchange="saveAnswer('q13', 2);"> Notepad</label>
+      <label><input type="radio" name="q13" value="3" onchange="saveAnswer('q13', 3);"> Paint</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q12.html">Previous</a>
+      <a class="nav-button" href="q14.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6fb;
+  color: #0f172a;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+header h2 {
+  margin: 0;
+}
+.timer {
+  color: #b91c1c;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.question-block {
+  margin-top: 1.5rem;
+}
+.question-text {
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+.question-block label {
+  display: block;
+  margin: 0.35rem 0;
+  cursor: pointer;
+}
+.question-block input[type="radio"] {
+  margin-right: 0.5rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+}
+.nav-links a {
+  text-decoration: none;
+}
+.nav-button {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.pass {
+  color: #15803d;
+}
+.fail {
+  color: #dc2626;
+}
+.result-actions {
+  margin-top: 1.5rem;
+}
+.result-actions a {
+  text-decoration: none;
+}
+.result-actions .nav-button {
+  background-color: #0f172a;
+}
+.blocked-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.blocked-state h2 {
+  margin-bottom: 0.5rem;
+}
+.footer-note {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #475569;
+}

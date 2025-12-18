@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Quiz Result</h2>
+    <div id="resultSummary"></div>
+    <div class="result-actions">
+      <a class="nav-button" href="index.html">Back to Start</a>
+    </div>
+    <p class="footer-note">
+      Need to log the score? <a href="https://forms.gle/your-google-form-id" target="_blank" rel="noreferrer">Report via Google Form</a>.
+    </p>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const summary = document.getElementById("resultSummary");
+      const score = calculateResult();
+      const isPass = score > 12;
+      summary.innerHTML = `
+        <p>Score: ${score}/25</p>
+        <p class="result-status ${isPass ? "pass" : "fail"}">${isPass ? "PASS ✅" : "FAIL ❌"}</p>
+      `;
+    });
+  </script>
+</body>
+</html>

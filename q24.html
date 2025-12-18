@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 24</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q24'); startTimer('q25.html');">
+  <main>
+    <header>
+      <h2>Question 24</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q24. Secure website sign:</p>
+      <label><input type="radio" name="q24" value="0" onchange="saveAnswer('q24', 0);"> Ads</label>
+      <label><input type="radio" name="q24" value="1" onchange="saveAnswer('q24', 1);"> HTTP</label>
+      <label><input type="radio" name="q24" value="2" onchange="saveAnswer('q24', 2);"> Padlock symbol</label>
+      <label><input type="radio" name="q24" value="3" onchange="saveAnswer('q24', 3);"> Red background</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q23.html">Previous</a>
+      <a class="nav-button" href="q25.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

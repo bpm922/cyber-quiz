@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 25</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q25'); startTimer('result.html');">
+  <main>
+    <header>
+      <h2>Question 25</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q25. Best password practice:</p>
+      <label><input type="radio" name="q25" value="0" onchange="saveAnswer('q25', 0);"> Same password everywhere</label>
+      <label><input type="radio" name="q25" value="1" onchange="saveAnswer('q25', 1);"> Share password</label>
+      <label><input type="radio" name="q25" value="2" onchange="saveAnswer('q25', 2);"> Change password regularly</label>
+      <label><input type="radio" name="q25" value="3" onchange="saveAnswer('q25', 3);"> Write password on paper</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q24.html">Previous</a>
+      <a class="nav-button" href="result.html">Submit Quiz</a>
+    </div>
+  </main>
+</body>
+</html>

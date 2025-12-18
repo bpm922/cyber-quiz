@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q5'); startTimer('q6.html');">
+  <main>
+    <header>
+      <h2>Question 5</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q5. Phishing is:</p>
+      <label><input type="radio" name="q5" value="0" onchange="saveAnswer('q5', 0);"> Fishing</label>
+      <label><input type="radio" name="q5" value="1" onchange="saveAnswer('q5', 1);"> Fake email or message scam</label>
+      <label><input type="radio" name="q5" value="2" onchange="saveAnswer('q5', 2);"> Backup</label>
+      <label><input type="radio" name="q5" value="3" onchange="saveAnswer('q5', 3);"> Encryption</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q4.html">Previous</a>
+      <a class="nav-button" href="q6.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

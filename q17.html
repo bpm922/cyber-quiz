@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 17</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q17'); startTimer('q18.html');">
+  <main>
+    <header>
+      <h2>Question 17</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q17. Safe cyber practice:</p>
+      <label><input type="radio" name="q17" value="0" onchange="saveAnswer('q17', 0);"> Clicking unknown links</label>
+      <label><input type="radio" name="q17" value="1" onchange="saveAnswer('q17', 1);"> Banking on public Wi-Fi</label>
+      <label><input type="radio" name="q17" value="2" onchange="saveAnswer('q17', 2);"> Updating software regularly</label>
+      <label><input type="radio" name="q17" value="3" onchange="saveAnswer('q17', 3);"> Sharing passwords</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q16.html">Previous</a>
+      <a class="nav-button" href="q18.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

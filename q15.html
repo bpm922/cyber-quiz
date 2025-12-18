@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 15</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q15'); startTimer('q16.html');">
+  <main>
+    <header>
+      <h2>Question 15</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q15. Personal information example:</p>
+      <label><input type="radio" name="q15" value="0" onchange="saveAnswer('q15', 0);"> Browser</label>
+      <label><input type="radio" name="q15" value="1" onchange="saveAnswer('q15', 1);"> Name and phone number</label>
+      <label><input type="radio" name="q15" value="2" onchange="saveAnswer('q15', 2);"> Firewall</label>
+      <label><input type="radio" name="q15" value="3" onchange="saveAnswer('q15', 3);"> IP address only</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q14.html">Previous</a>
+      <a class="nav-button" href="q16.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

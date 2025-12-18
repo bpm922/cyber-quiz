@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q1'); startTimer('q2.html');">
+  <main>
+    <header>
+      <h2>Question 1</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q1. Cyber Security means?</p>
+      <label><input type="radio" name="q1" value="0" onchange="saveAnswer('q1', 0);"> Protecting systems and data from digital attacks</label>
+      <label><input type="radio" name="q1" value="1" onchange="saveAnswer('q1', 1);"> Making computers fast</label>
+      <label><input type="radio" name="q1" value="2" onchange="saveAnswer('q1', 2);"> Gaming</label>
+      <label><input type="radio" name="q1" value="3" onchange="saveAnswer('q1', 3);"> Internet use</label>
+    </section>
+    <div class="nav-links">
+      <button class="nav-button" type="button" disabled>Previous</button>
+      <a class="nav-button" href="q2.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

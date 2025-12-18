@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 9</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q9'); startTimer('q10.html');">
+  <main>
+    <header>
+      <h2>Question 9</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q9. Safe to share online:</p>
+      <label><input type="radio" name="q9" value="0" onchange="saveAnswer('q9', 0);"> OTP</label>
+      <label><input type="radio" name="q9" value="1" onchange="saveAnswer('q9', 1);"> Password</label>
+      <label><input type="radio" name="q9" value="2" onchange="saveAnswer('q9', 2);"> Bank details</label>
+      <label><input type="radio" name="q9" value="3" onchange="saveAnswer('q9', 3);"> None of the above</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q8.html">Previous</a>
+      <a class="nav-button" href="q10.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>

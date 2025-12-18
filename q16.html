@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 16</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body onload="restoreAnswer('q16'); startTimer('q17.html');">
+  <main>
+    <header>
+      <h2>Question 16</h2>
+      <p class="timer" id="timer"></p>
+    </header>
+    <section class="question-block">
+      <p class="question-text">Q16. What to do with suspicious email?</p>
+      <label><input type="radio" name="q16" value="0" onchange="saveAnswer('q16', 0);"> Open it</label>
+      <label><input type="radio" name="q16" value="1" onchange="saveAnswer('q16', 1);"> Reply</label>
+      <label><input type="radio" name="q16" value="2" onchange="saveAnswer('q16', 2);"> Delete or report it</label>
+      <label><input type="radio" name="q16" value="3" onchange="saveAnswer('q16', 3);"> Forward it</label>
+    </section>
+    <div class="nav-links">
+      <a class="nav-button" href="q15.html">Previous</a>
+      <a class="nav-button" href="q17.html">Next</a>
+    </div>
+  </main>
+</body>
+</html>
